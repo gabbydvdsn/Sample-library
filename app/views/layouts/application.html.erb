@@ -21,9 +21,9 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="/">Home</a>
   <!-- Please add a model to add book to the library and update tge link below-->
-    <a class="link" href="#home">Add Book</a>
+    <a class="link" href="/books/new">Add Book</a>
  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
 
 </div>

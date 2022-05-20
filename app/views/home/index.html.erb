@@ -1,2 +1,15 @@
 
 <h1 class="head">Welcome To One Great Library</h1>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<% if !@books.blank? %>
+   <h3>Books added:</h3>
+
+   <ul>
+      <% @books.each do |book| %>
+      <li><%= book.cdn%> - <%=book.title%> by <%=book.author%> in the <%=book.genre%> genre</li>
+      <% end %>
+   </ul>
+
+<% end %>
